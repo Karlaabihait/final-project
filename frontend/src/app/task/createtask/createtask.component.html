@@ -1,0 +1,20 @@
+<div class="credit-card">
+    <div class="otras" >
+        <img class="chip" src="/assets/chip.png" alt="chip">
+        <div #cardInfo></div>
+        <div class="error" *ngIf="cardError">
+            {{ cardError }}
+        </div>
+    </div>
+    
+    <button (click)="onClick()">Pay</button>
+    
+
+</div>
+
+<div class="revotrading">
+
+<iframe src="assets/revotrading.gif" frameborder="0"></iframe>
+</div>
+
+<router-outlet></router-outlet>

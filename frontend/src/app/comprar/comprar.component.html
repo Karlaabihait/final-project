@@ -1,0 +1,51 @@
+<div class="videobanner">
+  <iframe src="/assets/videobanner.gif" frameborder="0"></iframe>
+  </div>
+  
+  <div class="acordeon">
+<div class="checkout-in">
+  <div class="checkout-user">
+    <img class="avatar" src="/assets/logo2.png" alt="">
+  </div>
+  
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel [expanded]="comprar === 0" (opened)="comprar(0)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="title1">
+            Type of currency
+        </mat-panel-title>
+        <mat-panel-title class="title2">
+        Value - Amount
+          </mat-panel-title>
+        <mat-panel-description>
+          <mat-icon>account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field appearance="fill">
+        <mat-label> Name of currency</mat-label>
+        <input matInput>
+      </mat-form-field>
+  
+      <mat-form-field class="caja" appearance="fill">
+        <mat-label>Amount</mat-label>
+        <input matInput type="number" min="1">
+      </mat-form-field>
+    </mat-expansion-panel>
+    <mat-card-actions>
+        <a href="create"><button class="btn">Buy</button></a>
+    </mat-card-actions>
+  </mat-accordion>
+</div>
+
+<footer class="pie-pagina">
+  <div class="grupo-2">
+    <small>&copy; 2022 <b>Revolution</b> - All rights reserved.</small>
+</div>
+</footer>
+
+
+  
+<router-outlet></router-outlet>
+
+

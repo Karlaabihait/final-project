@@ -1,0 +1,72 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 70px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #FF8692 0%, #FFFFFF 100%, #FFFFFF 100%);
+    box-shadow: 11px 16px 31px 5px rgba(0,0,0,0.34);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+mat-card-title{
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: 'Signika', sans-serif;
+    color: #ffffff;
+    text-shadow: 4px 4px 9px rgba(0,0,0,0.34);
+   
+   
+}
+
+.btn {
+    width: 5.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: #ffffff;
+    color: #FF8692;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: #ffffff;
+   }
+   
+   button:after {
+    content: "";
+    background: #FF8692;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+   .btncontainer{
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+   }

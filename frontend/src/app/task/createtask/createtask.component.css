@@ -1,0 +1,93 @@
+.credit-card{
+    width: 600px;
+    height: 300px;
+    border: 1px solid rgb(246, 240, 240);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(135deg, #FF8692 0%, #FFFFFF 100%, #FFFFFF 100%);
+    color: white;
+    margin-top: 50px;
+    margin-left: 350px;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 11px 16px 31px 5px rgba(0,0,0,0.34);
+}
+
+.otras{
+    color: black;
+    font-size: 20px;
+}
+
+.chip{
+    width: 100%;
+    max-width: 50px;
+    margin-bottom: 20px;
+}
+
+button {
+    --color: #FF8692;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    margin-left: 215px;
+    margin-top: 60px;
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: #fff;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #92A5FB;
+    transition: background 0s;
+   }
+
+   iframe{
+    height: 200px;
+    width: 1000px;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    box-shadow: 0px 22px 18px -12px #FF8692;
+  }
+  
+  .revotrading {
+  justify-content: center;
+  display: flex;
+  
+  }

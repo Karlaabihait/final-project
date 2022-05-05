@@ -1,0 +1,221 @@
+.card {
+    width: 190px;
+    height: 254px;
+    background-color: #587ff6;
+    box-shadow: 11px 16px 31px 5px rgba(0,0,0,0.34);
+    transition-duration: 0.5s;
+    border-radius: 30px;
+   }
+   
+   .title {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Signika', sans-serif;
+   }
+   
+   .pricecontainer {
+    width: 100%;
+    height: 60px;
+    margin-top: 0.7em;
+    background-color: #1e1e5d;
+    border-radius: 50px;
+    font-family: 'Signika', sans-serif;
+   }
+   
+   .price {
+    text-align: center;
+    color: rgb(238, 209, 46);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0.75em 0 0 0;
+    font-family: 'Signika', sans-serif;
+   }
+
+   .price1 {
+    text-align: center;
+    color: rgb(238, 209, 46);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0.75em 0 0 0;
+    font-family: 'Signika', sans-serif;
+   }
+   
+   .includes {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 0.6em;
+    font-size: small;
+    font-weight: bold;
+    font-family: 'Signika', sans-serif;
+   }
+   
+   .benefitlist li:nth-child(1) {
+    margin-top: 0.4em;
+   }
+   
+   .btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: #FF8692;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: #FF8692;
+   }
+   
+   button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+   .btncontainer{
+    text-align: center;
+   }
+
+   .row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+   }
+
+   .separate{
+       margin-bottom: 50px;
+       font-family: 'Signika', sans-serif;
+   }
+
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+
+.pie-pagina{
+    width: 100%;
+    background: linear-gradient(135deg, #1E1E5D 0%, #616EA7 100%, #92A5FB 100%);
+    font-family: 'Signika', sans-serif;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+    font-family: 'Signika', sans-serif;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Signika', sans-serif;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    font-family: 'Signika', sans-serif;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Signika', sans-serif;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: 'Signika', sans-serif;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #92A5FB;
+    text-align: center;
+    transition: all 300ms ease;
+   
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #FF8692;
+    
+}
+.pie-pagina .grupo-2{
+    background-color: #92A5FB;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Signika', sans-serif;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+        
+    }
+}
+
+.box{
+  color: white;
+  font-family: 'Signika', sans-serif;
+}
+
+h4{
+  font-family: 'Signika', sans-serif;
+}
+
+.contact{
+  margin-top: 20px;
+}
+
+  iframe{
+      height: 200px;
+      width: 1000px;
+      border-radius: 50px;
+      margin: 20px;
+      box-shadow: 0px 22px 18px -12px rgba(0,0,0,0.28);
+  }
+
+  .videobanner{
+    justify-content: center;
+    display: flex;
+    
+  }

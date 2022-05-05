@@ -1,0 +1,257 @@
+.container1 {
+    align-items: center;
+    display: flex;
+    font-family: 'Signika', sans-serif;
+    font-size: 60px;
+}
+
+
+h1,
+h3 {
+    margin-top: 25px;
+    font-family: 'Signika', sans-serif;
+    font-size: 25px;
+    color: rgb(97, 97, 97);
+
+}
+
+.container1 {
+    align-items: center;
+    display: flex;
+    background-color: #e2e7fe;
+    box-shadow: 0px 22px 18px -12px rgba(0, 0, 0, 0.28);
+    padding: 10px;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+
+.logo {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+
+.pie-pagina {
+    width: 100%;
+    background: linear-gradient(135deg, #1E1E5D 0%, #616EA7 100%, #92A5FB 100%);
+    font-family: 'Signika', sans-serif;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    font-family: 'Signika', sans-serif;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Signika', sans-serif;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+    font-family: 'Signika', sans-serif;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Signika', sans-serif;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: 'Signika', sans-serif;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #92A5FB;
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: #FF8692;
+
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #92A5FB;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Signika', sans-serif;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+
+    }
+}
+
+.box {
+    color: white;
+    font-family: 'Signika', sans-serif;
+}
+
+h4 {
+    font-family: 'Signika', sans-serif;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.card-title {
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 15px;
+    color: #FF8692;
+    text-align: center;
+}
+
+.card {
+    margin: 30px;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 11px 16px 31px 5px rgba(0, 0, 0, 0.34);
+    background-color: white;
+    color: #FF8692;
+    height: 300px;
+    width: 250px;
+
+}
+
+.card-img-top {
+    border-radius: 50px;
+    height: 150px;
+    width: 150px;
+}
+
+.scaled {
+    padding: 20px;
+}
+
+img {
+    border-radius: 50px 50px;
+}
+
+
+.btn {
+    width: 5.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: #ffffff;
+    color: #FF8692;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.btn:after {
+    content: "";
+    background: #FF8692;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.btncontainer {
+    font-family: 'Signika', sans-serif;
+
+}
+
+.space {
+    margin-left: 20px;
+    padding: 50px;
+}
+
+.boton {
+    margin-left: 80px;
+}
+
+.titleW {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 60px;
+    font-family: 'Signika', sans-serif;
+    color: #ffffff;
+    text-shadow: 4px 6px 11px rgba(0,0,0,0.45);
+}
+
+
+.boxwork {
+    border-radius: 50px;
+    background-color: #dce2ff;
+    box-shadow: 11px 16px 31px 5px rgba(0, 0, 0, 0.34);
+    margin-bottom: 60px;
+    padding: 10px;
+    width: 1200px;
+    margin-left: 30px;
+    margin-top: 60px;
+}

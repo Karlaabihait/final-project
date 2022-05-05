@@ -1,0 +1,26 @@
+<div (click)="open()" *ngIf="isClosed" class="cardContainer-icon">
+    <img src="/assets/bot.png" alt="boticon" width="80" />
+</div>
+  <div *ngIf="!isClosed" class="card text-center cardContainer">
+    <div (click)="close()" class="card-header">Revo Asisstant</div>
+    <div class="card-body">
+    <div id="messages">
+        <span
+          *ngFor="let mensaje of mensajes"
+        [ngClass]="
+            mensaje.emisor == 'bot' ? 'recibido p-2 mt-2' : 'enviado p-2 mt-2'"
+        >
+        {{ mensaje.texto }}
+        </span>
+    </div>
+    </div>
+    <form class="card-footer text-muted input-group" (ngSubmit)="enviarMensaje()">
+    <input
+        type="text"
+        class="form-control"
+        placeholder="Write a message"
+        [(ngModel)]="nuevoMensaje"
+        [ngModelOptions]="{ standalone: true }"
+    />
+    </form>
+</div>

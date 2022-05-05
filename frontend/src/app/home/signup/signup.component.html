@@ -1,0 +1,31 @@
+<div class="form" >
+<mat-card class="card">
+<mat-card-title>Sign Up</mat-card-title>
+<mat-card-content>
+<div class="container">
+    <!--campo name-->
+<mat-form-field>
+    <input [(ngModel)]="signupUser.name" matInput placeholder="Name" >
+</mat-form-field>
+<!--campo email-->
+<mat-form-field>
+    <input [(ngModel)]="signupUser.email" matInput placeholder="Email" >
+</mat-form-field>
+<!--campo password-->
+<mat-form-field>
+    <input [(ngModel)]="signupUser.password" matInput placeholder="Password" >
+</mat-form-field>
+<!--campo confirmar pasword-->
+<mat-form-field>
+    <input [(ngModel)]="signupUser.confirmpassword" matInput placeholder="Password Confirm" >
+</mat-form-field>
+</div>
+</mat-card-content>
+<mat-card-actions>
+    <div class="btncontainer">
+        <button (click)="signUp()" class="btn">Sign Up</button>
+        </div>
+</mat-card-actions>
+</mat-card>
+
+</div>
